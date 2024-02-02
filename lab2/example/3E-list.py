@@ -133,3 +133,67 @@ newlist = [x for x in fruits if x != "apple"]
 newlist = [x for x in range(10)]
 # 39
 newlist = [x for x in range(10) if x < 5]
+# 40
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+# 41
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+# 42
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+# 43
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(reverse = True)
+print(thislist)
+# 44
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+# 45
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort()
+print(thislist)
+# 46
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+# 47
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)
+# 48
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+# 49
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+# 50
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+# 51
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+  list1.append(x)
+
+print(list1)
+# 52
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1)
+# 53
