@@ -1,8 +1,9 @@
 def imdb55(movies):
-    if movies["imdb"] > 5.5:
-        return True
-    else :
-        return False
+    list_move = []
+    for movie in movies:
+        if movie['imdb'] > 5.5:
+            list_move.append(movie['name'])
+    return list_move
             
 
 
@@ -23,6 +24,6 @@ movies = [
     {"name": "Exam", "imdb": 4.2, "category": "Thriller"},
     {"name": "We Two", "imdb": 7.2, "category": "Romance"}
 ]
-film = movies[0]
-print(imdb55(film))
 
+list_move1 = imdb55(movies)
+print(list_move1)

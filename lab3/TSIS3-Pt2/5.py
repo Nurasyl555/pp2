@@ -1,8 +1,13 @@
-def imdb55(movies):
-    if movies["imdb"] > 5.5:
-        return True
-    else :
-        return False
+def ave(movies, category):
+    averge = 0
+    lens = 0
+    for move in movies:
+        if move['category'] == category:
+            averge += move['imdb']
+            lens += 1
+    return averge/lens
+        
+
             
 
 
@@ -23,6 +28,5 @@ movies = [
     {"name": "Exam", "imdb": 4.2, "category": "Thriller"},
     {"name": "We Two", "imdb": 7.2, "category": "Romance"}
 ]
-film = movies[0]
-print(imdb55(film))
-
+category = "Thriller"
+print(ave(movies, category))
