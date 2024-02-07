@@ -14,3 +14,4 @@ c2 = Point(3, 4)
 c1.show()
 c2.show()
 c1.dist(c2)
+
