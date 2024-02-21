@@ -1,8 +1,8 @@
 def generator(n):
-    value = 0
+    value = 1
     while value <= n:
-        yield value
-        value += 2
+        yield value**2
+        value += 1
 n = int(input())
 for value in generator(n):
     print(value)
